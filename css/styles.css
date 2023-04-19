@@ -260,7 +260,7 @@ body {
 
 /* --------------- About ---------------*/
 .about {
-  padding-top: 120px 0;
+  padding: 120px 0;
 }
 
 .about-list {
@@ -278,7 +278,6 @@ body {
 /* ---------What are we doing (Activity) Section--------*/
 
 .activity {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 
