@@ -56,17 +56,13 @@ body {
 }
 
 /* --------------Components------------ */
-/* .container * {
-  outline: 1px solid green;
-} */
+
 .container {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  /* outline: 1px solid red; */
 }
 
 .section-centered {
@@ -128,7 +124,7 @@ body {
   overflow: hidden;
 }
 
-/* ----                       ----------/Components------------ */
+/* -------------/Components------------ */
 
 /* --------------- Logo --------------- */
 .logo {
@@ -157,13 +153,14 @@ body {
 /* --------------- /Logo --------------- */
 
 /* --------------- Header ---------------*/
+.header {
+  border-bottom: 1px solid var(--color-cornflower);
+}
 .page-header {
   display: flex;
   justify-content: space-between;
 
   align-items: center;
-
-  border-bottom: 1px solid var(--color-cornflower);
 }
 .main-nav {
   display: flex;
@@ -197,6 +194,10 @@ body {
   color: var(--color-ocean-hover);
 }
 
+.current-page {
+  color: var(--color-ocean-hover);
+}
+
 .contact {
   font-style: normal;
 }
@@ -223,19 +224,27 @@ body {
 }
 .page-title {
   margin-bottom: 48px;
-  /* max-width: 496px; */
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
 
   color: var(--color-white);
   letter-spacing: 0.02em;
 }
 
 .button-main {
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+
   color: var(--color-white);
   background-color: var(--color-iris-accent);
+  border-radius: 4px;
+  border: none;
 }
 .button-main:hover,
 .button-main:focus {
@@ -243,12 +252,7 @@ body {
 }
 /* --------------- /HERO ---------------*/
 
-/**
-  |============================
-  | ---------ABOUT ------------             
-  |============================
-*/
-
+/* --------------- About ---------------*/
 .about {
   padding-top: 120px;
 }
@@ -263,11 +267,10 @@ body {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-/**
-  |============================
-  | What are we doing (Activity) Section
-  |============================
-*/
+/* --------------- /About ---------------*/
+
+/* ---------What are we doing (Activity) Section--------*/
+
 .activity {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -283,6 +286,8 @@ body {
   border: 1px solid var(--color-cornflower);
   flex-basis: calc((100% - 48px) / 3);
 }
+
+/* --------- /Activity --------*/
 
 /* --------------- TEAM ---------------*/
 
@@ -301,35 +306,68 @@ body {
   flex-basis: calc((100% - 72px) / 4);
   text-align: center;
   background-color: var(--color-white);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 
 .card-content {
   padding: 32px 16px;
-  /* outline: 1px solid teal;
-  background-color: #404bbf; */
 }
-
-/* .employee-photo {
-  margin-bottom: 32px;
-} */
-/* .employee-name {
-  margin-bottom: 8px;
-} */
 
 /* --------------- /TEAM --------------*/
 
-/* --------------- PORTFOLIO --------------*/
+/**
+  |============================
+  |          PORTFOLIO 
+  |============================
+*/
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+
+  margin-bottom: 72px;
+}
 
 .button-portfolio {
+  padding: 12px 24px;
+
   color: var(--color-iris-accent);
   background-color: var(--color-cloud);
+  border: 1px solid var(--color-cornflower);
+  border-radius: 4px;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
   color: var(--color-white);
   background-color: var(--color-ocean-hover);
+  border-color: transparent;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.project-card {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.project-card-content {
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+
+  border: 1px solid var(--color-cornflower);
+  border-top: none;
 }
 
 /* --------------- /PORTFOLIO --------------*/
