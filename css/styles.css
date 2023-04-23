@@ -363,9 +363,16 @@ body {
 
 .project-card {
   flex-basis: calc((100% - 48px) / 3);
+  display: flex; /*for card stretching */
+  flex-direction: column; /*for card stretching */
+}
+.project-link {
+  display: contents; /*for card stretching */
 }
 
 .project-card-content {
+  flex-grow: 1; /*for card stretching */
+
   padding-top: 32px;
   padding-right: 16px;
   padding-bottom: 32px;
